@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/showcmrule_goback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8.5dp"/>
+
+            <TextView
+                android:id="@+id/showcmrule_title"
+                android:layout_toRightOf="@+id/showcmrule_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="이용규칙"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    
+    <ScrollView
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. 전문"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_overview"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. 게시판 개시, 게시물의 작성과 내용"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_context"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. 이미지, 텍스트 관련 보안 및 저작권"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_image"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. 관리자 권한"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_admin"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. 법률 위반 게시물에 관한 조치"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_law"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. 쪽지"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_msg"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. 기타"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showcmrule_other"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#e1e1e1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            
+        </LinearLayout>
+    
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/showcmrule_waiting"
+        android:layout_below="@id/my_toolbar"
+        android:layout_above="@id/show_notice_adview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2ccee"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_child_friendly_black_24dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우리아이 유치원 어디로 보낼까?"
+            android:textSize="13sp"
+            android:textColor="#6c6c6c"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="키즈 캠퍼스"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ff4749"/>
+
+        <EditText
+            android:id="@+id/login_id"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonstyle8"
+            android:hint="이메일 아이디"
+            android:textSize="13dp"
+            android:textColor="#424242"
+            android:textColorHint="#424242"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/login_pw"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonstyle8"
+            android:hint="비밀번호"
+            android:textSize="13dp"
+            android:textColor="#424242"
+            android:textColorHint="#424242"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/login_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle9"
+            android:text="키즈캠퍼스 계정으로 로그인"
+            android:textSize="13sp"
+            android:textColor="#3a3a3a"/>
+
+        <Button
+            android:id="@+id/login_find"
+            android:background="@null"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="아이디/비밀번호 찾기"
+            android:textColor="#626262"/>
+
+        <Button
+            android:id="@+id/login_signin"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="회원가입"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/login_withoutlogin"
+            android:layout_marginTop="30dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonstyle9"
+            android:backgroundTint="#ff6e6e"
+            android:text="로그인 없이 실행하기"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/login_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>

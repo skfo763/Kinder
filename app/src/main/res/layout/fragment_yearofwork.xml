@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:background="@drawable/buttonstyle3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/yearofwork_name_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="기관명"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/yearofwork_name_2text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/yearofwork_name_2"
+            android:gravity="left"
+            android:text="(재)천주교수원교구유지재단데레사유치원"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5e5e5e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yearofwork_yy1_undr_thcnt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="1년 미만"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/yearofwork_yy1_undr_thcnttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/yearofwork_yy1_undr_thcnt"
+            android:gravity="left"
+            android:text="031-418-8311"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5e5e5e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yearofwork_yy1_abv_yy2_undr_thcnt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="1년이상~2년미만"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/yearofwork_yy1_abv_yy2_undr_thcnttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/yearofwork_yy1_abv_yy2_undr_thcnt"
+            android:gravity="left"
+            android:text="031-418-8311"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5e5e5e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yearofwork_yy2_abv_yy4_undr_thcnt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="2년이상~4년미만"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/yearofwork_yy2_abv_yy4_undr_thcnttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/yearofwork_yy2_abv_yy4_undr_thcnt"
+            android:gravity="left"
+            android:text="031-418-8311"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5e5e5e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yearofwork_yy4_abv_yy6_undr_thcnt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="4년이상~6년미만"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/yearofwork_yy4_abv_yy6_undr_thcnttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/yearofwork_yy4_abv_yy6_undr_thcnt"
+            android:gravity="left"
+            android:text="031-418-8311"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5e5e5e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yearofwork_yy6_abv_thcnt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="6년이상"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/yearofwork_yy6_abv_thcnttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/yearofwork_yy6_abv_thcnt"
+            android:gravity="left"
+            android:text="031-418-8311"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5e5e5e" />
+
+</LinearLayout>
+

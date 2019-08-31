@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:longClickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/subcommentitem_image"
+        android:layout_marginTop="7.5dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_subdirectory_arrow_right_black_24dp"/>
+
+    <RelativeLayout
+        android:padding="7.5dp"
+        android:layout_margin="7.5dp"
+        android:id="@+id/subcommentitem_line2"
+        android:layout_toRightOf="@+id/subcommentitem_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#efefef">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/subcommentitem_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#9b9b9b"/>
+
+            <TextView
+                android:id="@+id/subcommentitem_writer"
+                android:layout_marginLeft="7.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="익명"
+                android:textSize="14.5sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subcommentitem_time"
+            android:layout_toRightOf="@id/linearlayout1"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical|right"
+            android:text="2018/01/01 11:43"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/subcommentitem_context"
+            android:layout_below="@id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="댓글의 내용은 이러이러하고 저러저러합니다. 그래서 불만 o?"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

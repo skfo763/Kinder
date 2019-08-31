@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/linex"
+        android:layout_below="@+id/contestx"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#929292"
+        android:orientation="vertical"/>
+    
+    <RelativeLayout
+        android:id="@+id/relativex"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7.5dp">
+
+        <LinearLayout
+            android:id="@+id/star_layout1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/kinderboard_item_star1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/kinderboard_item_star2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/kinderboard_item_star3"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/kinderboard_item_star4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_half_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/kinderboard_item_star5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_border_black_24dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kinderboard_item_date"
+            android:layout_below="@id/star_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="2018년 1학기 입학"/>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contestx"
+        android:layout_below="@+id/relativex"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.5dp"
+        android:text="학점은 잘 채워주시고 교수님은 착하신거 같은데 나하고는 정말 안맞았음. 남들이 좋다는게 공감이 안됌. 쭉 읽듯이 빠르게 수업하시는 타입인데 이런 수업도 집중해서 들을 수 있다하면 추천하지만 그닥 추천하고 싶진 않음."
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>

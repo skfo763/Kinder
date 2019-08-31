@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/alertitem_imageView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="37.5dp"
+        android:layout_height="37.5dp"
+        android:background="@drawable/send_icon"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/alertitem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트 제목"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/alertitem_context"
+            android:layout_marginTop="2.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트 내용"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/alertitem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트 작성 시간~"
+            android:layout_marginTop="2.5dp"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

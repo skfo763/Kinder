@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location.LocationActivity">
+
+    <fragment
+        android:layout_below="@id/my_toolbar"
+        android:id="@+id/location_mapfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.naver.maps.map.MapFragment"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/location_showkinder"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="#aa000000">
+
+        <RelativeLayout
+            android:padding="11.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <TextView
+                android:id="@+id/location_title"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유치원 이름"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/kinder_more_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/location_establish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="국공립(전체)"
+                    android:textSize="13sp"
+                    android:textColor="#e3e3e3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="13sp"
+                    android:textColor="#e3e3e3"/>
+
+                <TextView
+                    android:id="@+id/location_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 율곡로 29길 5"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="13sp"
+                    android:textColor="#e3e3e3"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/locationitem_chevron"
+                android:layout_toLeftOf="@+id/locationitem_line"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                android:backgroundTint="#e3e3e3"/>
+
+            <LinearLayout
+                android:id="@+id/locationitem_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#555555"
+                android:layout_toLeftOf="@id/location_call"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:id="@+id/location_call"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_call_black_24dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/location_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="유치원 조회"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

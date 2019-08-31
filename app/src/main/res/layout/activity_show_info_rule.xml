@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notice.ShowInfoRuleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/showinrule_goback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8.5dp"/>
+
+            <TextView
+                android:id="@+id/showinrule_title"
+                android:layout_toRightOf="@+id/showinrule_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="이용규칙"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. 개인정보처리방침 통합 전문"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_overview"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. 수집하는 개인정보의 항목"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_context"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. 수집한 개인정보의 이용"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_usage"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. 개인정보의 제공 및 위탁"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_offer"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. 수집한 개인 정보의 관리"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_manage"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. 정보제공자의 권리 및 의무 행사"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_right"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. 개인정보 관련 서비스 요청"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_service"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="#e1e1e1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. 기타"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/showinrule_other"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="본 어플리케이션 - 이하 (앱 제목)의 모든 이용고객은 이하 나타나는 모든 커뮤니티 이용약관에 동의하였으며, 해당 약관을 준수할 것을 서약하였다."
+                    android:textSize="12.5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#e1e1e1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/showinrule_waiting"
+        android:layout_below="@id/my_toolbar"
+        android:layout_above="@id/show_notice_adview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.KidsCampus.user.kinder"
+    android:versionCode="3"
+    android:versionName="1.1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_title"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_title"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        tools:targetApi="m">
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="04nt7dd1j4" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2826122867888366~8262082336" />
+
+        <activity
+            android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mykinder0112.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="mykinder0112.page.link"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".KInderActivity" />
+        <activity android:name=".ShowKinderActivity" />
+        <activity android:name=".AnotherKinderActivity" />
+        <activity android:name=".KinderBoard.KinderBoardActivity" />
+        <activity android:name=".Search.SearchKinderActivity" />
+        <activity android:name=".KinderBoard.WriteKinderBoardActivity" />
+        <activity android:name=".NormalBoard.WriteBoardActivity" />
+        <activity android:name=".NormalBoard.MakeBoardActivity" />
+        <activity android:name=".NormalBoard.ShowPrivateListActivity" />
+        <activity android:name=".Login.SignInActivity" />
+        <activity android:name=".NormalBoard.ShowBoardListActivity" />
+        <activity android:name=".Login.FindActivity" />
+        <activity android:name=".NormalBoard.ShowEachBoardActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".NormalBoard.ShowImageActivity" />
+        <activity android:name=".PrivateInfoActivity" />
+        <activity android:name=".Message.SendMessageActivity" />
+        <activity android:name=".Message.ShowMessageRoomActivity" />
+        <activity android:name=".Location.LocationActivity" />
+        <activity android:name=".Search.SearchWrittenActivity" />
+        <activity android:name=".Search.SearchScrabbedActivity" />
+        <activity android:name=".Search.SearchBoardActivity" />
+        <activity android:name=".Search.SearchPopularActivity" />
+        <activity android:name=".Notice.NoticeActivity" />
+        <activity android:name=".Notice.ShowCommunityRuleActivity" />
+        <activity android:name=".Notice.ShowNoticeActivity" />
+        <activity android:name=".Notice.ShowInfoRuleActivity"></activity>
+    </application>
+
+</manifest>

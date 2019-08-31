@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/item_message_room_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쪽지 작성자"
+            android:textSize="14.5dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/item_message_room_time"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18/12/25 13:52"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_message_room_context"
+            android:layout_toLeftOf="@+id/item_message_room_check"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="쪽지 내용은 이러이러하고 저러저러합니다. 내용ㅇㄹ 맞춰보고 싶다면 맞처보시던가."
+            android:textSize="13sp"
+            android:textColor="#1d1d1d"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/item_message_room_check"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(읽지 않음)"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

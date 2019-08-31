@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:clickable="true"
+    android:longClickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/commentitem_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_marginTop="7.5dp"
+            android:id="@+id/linearlayout1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/commentitem_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#9b9b9b"/>
+
+            <TextView
+                android:id="@+id/commentitem_writer"
+                android:layout_marginLeft="7.5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="익명"
+                android:textSize="14.5sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="7.5dp"
+            android:id="@+id/commentitem_time"
+            android:layout_toRightOf="@id/linearlayout1"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="15dp"
+            android:text="2018/01/01 11:43"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/commentitem_context"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="댓글의 내용은 이러이러하고 저러저러합니다. 그래서 불만 o?"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/commentitem_relative"
+        android:layout_marginTop="7.5dp"
+        android:layout_below="@+id/commentitem_line2"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/commentitem_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/commentitem_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#afafaf"
+        android:layout_below="@+id/commentitem_relative"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

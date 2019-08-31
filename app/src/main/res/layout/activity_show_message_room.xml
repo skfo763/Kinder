@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message.ShowMessageRoomActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/showmessageroom_goback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8.5dp"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/showmessageroom_title"
+                android:layout_toRightOf="@+id/showmessageroom_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닉네임"
+                android:textColor="#ffffff"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/showmessageroom_send"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/showmessageroom_delete"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_send_black_24dp"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/showmessageroom_delete"
+                android:layout_marginRight="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_delete_forever_black_24dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/my_toolbar"
+        android:layout_above="@id/showmessageroom_adview"
+        android:id="@+id/showmessageroom_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/showmessageroom_adview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a9a9a9"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2826122867888366/9356960555"/>
+
+</RelativeLayout>

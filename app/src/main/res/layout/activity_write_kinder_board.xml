@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KinderBoard.WriteKinderBoardActivity"
+    android:background="#faddff">
+
+    <ScrollView
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/buttonstyle3">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:src="@drawable/search_image"/>
+
+                    <TextView
+                        android:id="@+id/writeboard_name"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:text="반석 아이꿈 유치원"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/writeboard_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="관할기관"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/writeboard_name_2text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/writeboard_name_2"
+                        android:gravity="left"
+                        android:text="대전광역시교육청 서부교육지원청"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/writeboard_establish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="설립유형"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/writeboard_establishtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/writeboard_establish"
+                        android:gravity="left"
+                        android:text="사립(법인)"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle3"
+                android:padding="17.5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="리뷰 작성하기"
+                    android:textSize="17sp"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7e7e7e"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="환경, 보건, 위생"/>
+
+                    <RadioGroup
+                        android:id="@+id/writekinderboard_circumstance_radiogroup"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/circumstance_check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="매우 깨끗함"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:checked="true"
+                            android:background="@drawable/buttonstyle5" />
+
+                        <RadioButton
+                            android:id="@+id/circumstance_check2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="적당"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/circumstance_check3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="불청결"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12.5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="전반적인 교사 평가"/>
+
+                    <RadioGroup
+                        android:id="@+id/writekinderboard_teacher_radiogroup"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/teacher_check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="매우 친절"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:checked="true"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/teacher_check2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="보통"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/teacher_check3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="불친절"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12.5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="유치원 이용료(원비)"/>
+
+                    <RadioGroup
+                        android:id="@+id/writekinderboard_pay_radiogroup"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/pay_check1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="29dp"
+                                android:text="높은 편"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:paddingRight="10dp"
+                                android:checked="true"
+                                android:background="@drawable/buttonstyle5"/>
+
+                            <RadioButton
+                                android:id="@+id/pay_check2"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="29dp"
+                                android:text="적당"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/buttonstyle5"/>
+
+                            <RadioButton
+                                android:id="@+id/pay_check3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="29dp"
+                                android:text="저렴한 편"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:paddingRight="10dp"
+                                android:background="@drawable/buttonstyle5"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12.5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="가성비(비용 대비 서비스 측면)"/>
+
+                    <RadioGroup
+                        android:id="@+id/writekinderboard_payrate_radiogroup"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/payrate_check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="가성비 좋음"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:checked="true"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/payrate_check2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="적당"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/payrate_check3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="안좋음"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12.5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="안전"/>
+
+                    <RadioGroup
+                        android:id="@+id/writekinderboard_safety_radiogroup"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/safety_check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="철저한 관리"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:checked="true"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/safety_check2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="보통"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                        <RadioButton
+                            android:id="@+id/safety_check3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:text="관리 미흡"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7e7e7e"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="총평 및 별점"
+                    android:textSize="16.5sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="7.5dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="총점" />
+
+                    <RadioGroup
+                        android:id="@+id/writekinderboard_score_radiogroup"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/score_check1"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:text="1점"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:checked="true"
+                            android:background="@drawable/buttonstyle5"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="1dp" />
+
+                        <RadioButton
+                            android:id="@+id/score_check2"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:text="2점"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="1dp" />
+
+                        <RadioButton
+                            android:id="@+id/score_check3"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:text="3점"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="1dp" />
+
+                        <RadioButton
+                            android:id="@+id/score_check4"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:text="4점"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="1dp" />
+
+                        <RadioButton
+                            android:id="@+id/score_check5"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:text="5점"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/buttonstyle5"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="12.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="입학 및 등록학기"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/writeboard_spinner_year"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/year"
+                        android:spinnerMode="dialog"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="년도"/>
+
+                    <Spinner
+                        android:id="@+id/writeboard_spinner_semester"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/semester"
+                        android:spinnerMode="dialog"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="학기"/>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/writeboard_context"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7.5dp"
+                    android:paddingBottom="7.5dp"
+                    android:background="@drawable/buttonstyle6"
+                    android:hint="@string/hint"
+                    android:textSize="13sp"
+                    android:gravity="top"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/writeboard_progress"
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="리뷰 작성하기"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/writeboard_write"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_edit_black_24dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

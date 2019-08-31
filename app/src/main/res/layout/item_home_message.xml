@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/home_msg_writer"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/home_msg_context"
+            android:layout_toRightOf="@+id/home_msg_writer"
+            android:layout_toLeftOf="@+id/home_new"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="쪽지 내용은 이러이러하고 저러저러합니다."
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/home_new"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="27.5dp"
+            android:layout_height="27.5dp"
+            android:background="@drawable/ic_fiber_new_black_24dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

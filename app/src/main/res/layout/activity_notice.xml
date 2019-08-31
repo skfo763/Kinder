@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notice.NoticeActivity">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/notice_goback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8.5dp"/>
+
+            <TextView
+                android:id="@+id/showeachboard_title"
+                android:layout_toRightOf="@+id/notice_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="공지사항"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notice_recyclerview"
+        android:layout_below="@id/my_toolbar"
+        android:layout_above="@id/notice_adview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/notice_waiting"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_above="@+id/notice_adview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon_write"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아직 게시판에 글이 없어요~\n지금 바로 게시글을 작성해 주세요!"
+            android:textSize="16sp"
+            android:textColor="#464646"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/notice_adview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#a9a9a9"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2826122867888366/9356960555" />
+
+</RelativeLayout>

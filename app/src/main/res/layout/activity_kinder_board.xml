@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KinderBoard.KinderBoardActivity"
+    android:background="#faddff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="별점 및 한줄평"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_above="@+id/kinderboard_adview"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/kinderboard_stars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonstyle3">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="27.5dp"
+                        android:layout_height="27.5dp"
+                        android:src="@drawable/search_image"/>
+
+                    <TextView
+                        android:id="@+id/kinderboard_name"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="27.5dp"
+                        android:text="반석 아이꿈 유치원"
+                        android:textSize="17sp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="관할기관"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_name_2text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/kinderboard_name_2"
+                        android:gravity="left"
+                        android:text="대전광역시교육청 서부교육지원청"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_establish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="설립유형"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_establishtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/kinderboard_establish"
+                        android:gravity="left"
+                        android:text="사립(법인)"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle3"
+                android:orientation="vertical"
+                android:paddingTop="12.5dp"
+                android:paddingBottom="12.5dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="별점 / 리뷰"
+                        android:textSize="17sp"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/kinderboard_makereview"
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:text="리뷰 남기기"
+                        android:textSize="13sp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/buttonstyle4"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/star_layout1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/kinderboard_star1"
+                            android:layout_width="27.5dp"
+                            android:layout_height="27.5dp"
+                            android:src="@drawable/ic_star_border_black_24dp"/>
+
+                        <ImageView
+                            android:id="@+id/kinderboard_star2"
+                            android:layout_width="27.5dp"
+                            android:layout_height="27.5dp"
+                            android:src="@drawable/ic_star_border_black_24dp"/>
+
+                        <ImageView
+                            android:id="@+id/kinderboard_star3"
+                            android:layout_width="27.5dp"
+                            android:layout_height="27.5dp"
+                            android:src="@drawable/ic_star_border_black_24dp"/>
+
+                        <ImageView
+                            android:id="@+id/kinderboard_star4"
+                            android:layout_width="27.5dp"
+                            android:layout_height="27.5dp"
+                            android:src="@drawable/ic_star_border_black_24dp"/>
+
+                        <ImageView
+                            android:id="@+id/kinderboard_star5"
+                            android:layout_width="27.5dp"
+                            android:layout_height="27.5dp"
+                            android:src="@drawable/ic_star_border_black_24dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/kinderboard_number"
+                        android:layout_toRightOf="@id/star_layout1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_circumstance"
+                        android:layout_width="42.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="환경"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_circumstancetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/kinderboard_circumstance"
+                        android:gravity="left"
+                        android:text="정보 없음"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_teacher"
+                        android:layout_width="42.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="교사"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_teachertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/kinderboard_teacher"
+                        android:gravity="left"
+                        android:text="정보 없음"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_pay"
+                        android:layout_width="42.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="원비"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_paytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/kinderboard_pay"
+                        android:gravity="left"
+                        android:text="정보 없음"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_payrate"
+                        android:layout_width="42.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="가성비"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_payratetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/kinderboard_payrate"
+                        android:gravity="left"
+                        android:text="정보 없음"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left">
+
+                    <TextView
+                        android:id="@+id/kinderboard_safety"
+                        android:layout_width="42.5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left"
+                        android:text="안전"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/kinderboard_safetytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/kinderboard_safety"
+                        android:gravity="left"
+                        android:text="정보 없음"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/kinderboard_relativelayout"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/buttonstyle3"
+                    android:id="@+id/kinderboard_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/kinderboard_linearlayout"
+                android:visibility="gone"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/buttonstyle3"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text1"
+                    android:gravity="center"/>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/kinderboard_makereview_2"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:text="리뷰 남기기"
+                    android:textSize="14sp"
+                    android:textColor="#242424"
+                    android:background="@drawable/buttonstyle5"
+                    android:layout_alignParentRight="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/kinderboard_adview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a9a9a9"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2826122867888366/9356960555"/>
+
+
+</RelativeLayout>

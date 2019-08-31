@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:padding="11.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/kinder_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유치원 이름"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/kinder_more_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/kinder_establish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="국공립(전체)"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/kinder_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울특별시 종로구 율곡로 29길 5"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/kinderitem_chevron"
+            android:layout_toLeftOf="@+id/kinderitem_line"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_chevron_right_black_24dp"/>
+
+        <LinearLayout
+            android:id="@+id/kinderitem_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#555555"
+            android:layout_toLeftOf="@id/kinder_call"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:id="@+id/kinder_call"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_call_black_24dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464"/>
+
+
+
+</RelativeLayout>

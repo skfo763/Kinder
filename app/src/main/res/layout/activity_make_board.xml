@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalBoard.MakeBoardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/makeboard_goback"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/makeboard_title"
+                android:layout_toRightOf="@+id/makeboard_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="새 게시판 만들기"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/makeboard_check"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="만들기"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/buttonstyle4"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기본정보"
+            android:textColor="#606060"
+            android:layout_marginBottom="7.5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#838383"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/makeboard_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="#ffd7fa"
+                android:hint="게시판 이름"
+                android:textSize="16sp"
+                android:textColor="#606060"
+                android:textColorHint="#606060"/>
+
+            <LinearLayout
+                android:background="#c1c1c1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/makeboard_description"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="#ffd7fa"
+                android:hint="게시판 설명"
+                android:textSize="16sp"
+                android:textColor="#606060"
+                android:textColorHint="#606060"/>
+
+            <LinearLayout
+                android:background="#838383"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="게시판 설정"
+            android:textColor="#606060"
+            android:layout_marginBottom="7.5dp"/>
+
+        <LinearLayout
+            android:background="#838383"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffd7fa"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="익명 허용"
+                android:textSize="16sp"
+                android:textColor="#606060"/>
+
+            <Switch
+                android:id="@+id/makeboard_switch"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="#838383"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

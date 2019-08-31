@@ -1,0 +1,20 @@
+<resources>
+    <string name="main_navi_item_home"><font size="12">홈</font></string>
+    <string name="main_navi_item_kinder"><font size="12">찾아보기</font></string>
+    <string name="main_navi_item_board"><font size="12">게시판</font></string>
+    <string name="main_navi_item_alert"><font size="12">알림</font></string>
+    <string name="main_navi_item_location"><font size="12">쪽지</font></string>
+
+    <string name="app_name">키즈 캠퍼스</string>
+    <string name="hint">[총평 작성]\n이 유치원에 대한 총평을 간단히 작성해주세요.\n(등록 후에는 수정 및 삭제가 불가능하므로 신중히 적어 주세요.)</string>
+    <string name="text1">작성된 리뷰가 없습니다!\n지금 리뷰를 작성해주세요~</string>
+    <string name="contexthint">여기를 눌러서 글을 작성할 수 있습니다.\n게시글 작성시 다음 규칙에 유의해주세요.\n\n[정보통신망법에 의한 홍보게시물 작성 금지]
+        \n1.쇼핑몰, 오픈마켓, 소셜커머스 등 홍보\n2. 광고가 있는 카페, 블로그, 커뮤니티, 앱의 추천, 홍보, 방문유도 등
+    \n3. 토익, 한자 등 어학원\n4. 연극, 영화, 티켓할인 서비스\n5. 안과, 치과, 피부과 등 의료업체
+    \n\n[커뮤니티 이용규칙에 어긋나는 행위 금지]\n1. 실명이 유츌된 게시글의 허가없는 스크린샷, 게시물 내용 유출
+    \n2. 욕설, 비하, 음란물, 개인정보가 포함된 게시물 게시\n3. 특정인이나 단체/지역을 비방하는 행위
+    \n4. 기타 현행법에 어긋나는 행위\n\n자세한 내용은 홈화면 상단 [위치]의 [이용규칙]을 참고하시기 바랍니다.</string>
+    <string name="login_notify">로그인 후 사용가능한 기능입니다.\n로그인해주세요</string>
+    <string name="login_noalerm">수신한 알람이 없습니다.</string>
+    <string name="login_nomessage">수신한 쪽지가 없습니다.</string>
+</resources>

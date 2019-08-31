@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.FindActivity">
+
+    <ScrollView
+        android:layout_below="@id/my_toolbar"
+        android:background="#f2ccee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디(이메일) 찾기" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/find_id_edittext_birth"
+                    android:layout_toLeftOf="@id/find_id_button_birth"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_person_outline_gray_24dp"
+                    android:drawableTint="#686868"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonstyle7"
+                    android:hint="생년월일 입력"
+                    android:textSize="14sp"
+                    android:textColor="#343434"
+                    android:textColorHint="#343434"/>
+
+                <Button
+                    android:id="@+id/find_id_button_birth"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonstyle4"
+                    android:text="선택"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="7.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/find_id_edittext"
+                    android:layout_toLeftOf="@id/find_id_button"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_person_outline_gray_24dp"
+                    android:drawableTint="#686868"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonstyle7"
+                    android:hint="실명 입력"
+                    android:textSize="14sp"
+                    android:textColor="#343434"
+                    android:textColorHint="#343434"/>
+
+                <Button
+                    android:id="@+id/find_id_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonstyle4"
+                    android:text="찾기"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 재설정" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/find_pw_edittext_id"
+                    android:layout_toLeftOf="@id/find_pw_button_id"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_person_outline_gray_24dp"
+                    android:drawableTint="#686868"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonstyle7"
+                    android:hint="아이디(이메일) 입력"
+                    android:textSize="14sp"
+                    android:textColor="#343434"
+                    android:textColorHint="#343434"/>
+
+                <Button
+                    android:id="@+id/find_pw_button_id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonstyle4"
+                    android:text="확인"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/find_waiting"
+        android:gravity="center"
+        android:background="#aa000000"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/find_goback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/find_title"
+                android:layout_toRightOf="@+id/find_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="아이디/비밀번호 찾기"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
