@@ -27,10 +27,10 @@
         tools:targetApi="m">
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
-            android:value="04nt7dd1j4" />
+            android:value="Password(Blocked)" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2826122867888366~8262082336" />
+            android:value="Password(Blocked)" />
 
         <activity
             android:name=".SplashActivity">
