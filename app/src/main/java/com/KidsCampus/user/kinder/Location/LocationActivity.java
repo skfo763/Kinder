@@ -201,8 +201,8 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
 
                 Request request = new Request.Builder()
                         .url(requestUrl)
-                        .header("X-NCP-APIGW-API-KEY-ID", "04nt7dd1j4")
-                        .addHeader("X-NCP-APIGW-API-KEY", "Fk2Gzm7nBpHvbMILoKAA2FDG2Qhf4XMAfI6ObWZo")
+                        .header("X-NCP-APIGW-API-KEY-ID", "Password(blocked)")
+                        .addHeader("X-NCP-APIGW-API-KEY", "Password(blocked)")
                         .build();
 
                 client.newCall(request).enqueue(new Callback() {
