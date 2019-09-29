@@ -115,7 +115,7 @@ public class SendMessageActivity extends AppCompatActivity {
         RequestBody requestBody = RequestBody.create(MediaType.parse("application/json; charset=utf8"), gson.toJson(notificationModels));
         Request request = new Request.Builder()
                 .header("Content-Type", "application/json")
-                .addHeader("Authorization", "key=AIzaSyDgO64woitIDfzghI1S3F-gcmk5Nnthek0")
+                .addHeader("Authorization", "key=*Blocked")
                 .url("https://fcm.googleapis.com/fcm/send")
                 .post(requestBody)
                 .build();
